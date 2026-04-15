@@ -1,31 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/about">About</a>
+    <a href="/story">Story</a>
+</div>
+
+<!-- Container -->
 <div class="container">
 
-<h1>📘 About Project</h1>
+<h1>📘 About This Project</h1>
 
+<!-- Main Description -->
 <div class="card">
 <p>
-This project analyzes EV charging patterns, battery performance, and efficiency.
-It uses Tableau dashboards integrated with Flask to provide insights.
+This project focuses on analyzing Electric Vehicle (EV) data using Tableau dashboards 
+and integrating them into a Flask-based web application. It provides insights into 
+charging patterns, battery performance, and efficiency across different EV models.
 </p>
 </div>
 
+<!-- Features -->
 <div class="grid">
 
 <div class="card small-card">
 <h3>⚡ Data Analysis</h3>
-<p>Using real EV datasets</p>
+<p>Analyzing EV datasets for patterns and insights</p>
 </div>
 
 <div class="card small-card">
 <h3>📊 Visualization</h3>
-<p>Tableau dashboards</p>
+<p>Interactive dashboards created using Tableau</p>
 </div>
 
 <div class="card small-card">
-<h3>🌐 Web App</h3>
-<p>Flask integration</p>
+<h3>🌐 Web Integration</h3>
+<p>Flask-based web app embedding dashboards</p>
 </div>
 
 </div>
 
+<!-- Objectives -->
+<div class="card">
+<h2>🎯 Objectives</h2>
+<ul style="text-align:left; max-width:800px; margin:auto;">
+<li>Understand EV charging behavior</li>
+<li>Analyze battery efficiency and range</li>
+<li>Compare EV models based on performance</li>
+<li>Provide data-driven insights</li>
+</ul>
 </div>
+
+</div>
+
+</body>
+</html>
