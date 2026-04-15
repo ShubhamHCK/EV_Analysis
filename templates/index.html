@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>EV Analysis</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>EV Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
+<!-- Navbar -->
 <div class="navbar">
     <a href="/">Home</a>
     <a href="/dashboard">Dashboard</a>
@@ -14,31 +15,44 @@
     <a href="/story">Story</a>
 </div>
 
+<!-- Container -->
 <div class="container">
 
 <h1>⚡ EV Charge & Range Analysis</h1>
-<p>Explore EV insights using interactive dashboards</p>
+<p>Explore Electric Vehicle insights using interactive dashboards</p>
 
 <div class="grid">
 
+<!-- Dashboard Card -->
 <div class="card small-card">
 <h3>📊 Dashboard</h3>
-<p>Analyze EV performance and efficiency</p>
-<a href="/dashboard" class="btn">View</a>
+<p>Analyze EV performance, efficiency, and range</p>
+<a href="/dashboard" class="btn">View Dashboard</a>
 </div>
 
-<div class="card small-card">
-<h3>📘 About</h3>
-<p>Understand project details</p>
-<a href="/about" class="btn">View</a>
-</div>
-
+<!-- Story Card -->
 <div class="card small-card">
 <h3>📖 Story</h3>
-<p>View insights in story format</p>
-<a href="/story" class="btn">View</a>
+<p>Understand insights step-by-step</p>
+<a href="/story" class="btn">View Story</a>
 </div>
 
+<!-- About Card -->
+<div class="card small-card">
+<h3>📘 About</h3>
+<p>Learn about the project and methodology</p>
+<a href="/about" class="btn">Learn More</a>
+</div>
+
+</div>
+
+<!-- Extra Section -->
+<div class="card">
+<h2>🚀 Why EV Analytics?</h2>
+<p>
+Electric Vehicles are transforming transportation. This platform helps analyze 
+charging behavior, battery performance, and efficiency using real-world data.
+</p>
 </div>
 
 </div>
