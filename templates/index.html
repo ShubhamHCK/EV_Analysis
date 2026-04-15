@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>EV Analysis</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<title>EV Analysis</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 
 <div class="navbar">
@@ -14,8 +15,32 @@
 </div>
 
 <div class="container">
-    <h1>⚡ EV Charge & Range Analysis</h1>
-    <p>Explore Electric Vehicle Data with Interactive Dashboards</p>
+
+<h1>⚡ EV Charge & Range Analysis</h1>
+<p>Explore EV insights using interactive dashboards</p>
+
+<div class="grid">
+
+<div class="card small-card">
+<h3>📊 Dashboard</h3>
+<p>Analyze EV performance and efficiency</p>
+<a href="/dashboard" class="btn">View</a>
+</div>
+
+<div class="card small-card">
+<h3>📘 About</h3>
+<p>Understand project details</p>
+<a href="/about" class="btn">View</a>
+</div>
+
+<div class="card small-card">
+<h3>📖 Story</h3>
+<p>View insights in story format</p>
+<a href="/story" class="btn">View</a>
+</div>
+
+</div>
+
 </div>
 
 </body>
