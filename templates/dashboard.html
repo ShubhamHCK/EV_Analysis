@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/about">About</a>
+    <a href="/story">Story</a>
+</div>
+
+<div class="container">
+
+<h1>📊 EV Analytics Dashboard</h1>
+
+<!-- Loader -->
+<div class="loader"></div>
+
+<!-- STORY -->
+<div class="card">
+<h2>📖 EV Story</h2>
+<iframe src="https://public.tableau.com/app/profile/shubham.singh1182/viz/BatteryPerformanceAnalysisDashboard/Dashboard2?:embed=y&:display_count=yes"></iframe>
+</div>
+
+<!-- DASHBOARD 1 -->
+<div class="card">
+<h2>🔋 Battery Performance</h2>
+<iframe src="https://public.tableau.com/app/profile/shubham.singh1182/viz/BatteryPerformanceAnalysisDashboard/Dashboard2?:embed=y&:display_count=yes"></iframe>
+</div>
+
+<!-- DASHBOARD 2 -->
+<div class="card">
+<h2>⚡ Charging Efficiency</h2>
+<iframe src="https://public.tableau.com/app/profile/shubham.singh1182/viz/EVChargingEfficiencyAnalysisDashboard/Dashboard2?:embed=y&:display_count=yes"></iframe>
+</div>
+
+<!-- DASHBOARD 3 -->
+<div class="card">
+<h2>🚗 EV Model Comparison</h2>
+<iframe src="https://public.tableau.com/app/profile/shubham.singh1182/viz/EVModelComparisonDashboard/Dashboard3?:embed=y&:display_count=yes"></iframe>
+</div>
+
+</div>
+
+</body>
+</html>
