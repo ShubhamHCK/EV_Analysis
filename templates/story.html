@@ -1,18 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EV Story</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/about">About</a>
+    <a href="/story">Story</a>
+</div>
+
+<!-- Container -->
 <div class="container">
 
-<h1>📖 EV Story</h1>
+<h1>📖 EV Analysis Story</h1>
+<p>Understand EV insights step-by-step through interactive visual storytelling</p>
 
+<!-- Loader -->
+<div class="loader"></div>
+
+<!-- STORY VISUAL -->
 <div class="card">
+<h2>📊 EV Story Overview</h2>
+
 <iframe 
-src="https://public.tableau.com/views/Ishita_EV_Analysis/Dashboard1?:embed=y&:display_count=yes">
+src="https://public.tableau.com/views/Ishita_EV_Analysis/Dashboard1?:embed=y&:display_count=yes"
+width="100%" 
+height="600"
+style="border:none;">
 </iframe>
+
 </div>
 
+<!-- Explanation Section -->
 <div class="card">
+<h2>📌 Key Insights</h2>
+
 <p>
-This story shows how EV efficiency, battery performance, and range vary across models.
-It helps planners and users make better decisions.
+This story explains how electric vehicle efficiency, battery performance, and range vary across different models.
+It helps city planners, fleet managers, and consumers make data-driven decisions.
 </p>
+
+<ul style="text-align:left; max-width:800px; margin:auto;">
+<li>⚡ EV efficiency differs across brands</li>
+<li>🔋 Battery capacity impacts driving range</li>
+<li>🚗 Faster cars may consume more energy</li>
+<li>📊 Data helps in better EV selection</li>
+</ul>
+
 </div>
 
 </div>
+
+<!-- Loader Hide Script -->
+<script>
+window.addEventListener("load", function(){
+    const loader = document.querySelector(".loader");
+    if(loader) loader.style.display = "none";
+});
+</script>
+
+</body>
+</html>
